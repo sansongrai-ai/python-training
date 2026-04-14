@@ -77,3 +77,6 @@ p3 = Person2("Nick", 19)
  
 print(p3.name)
 print(p3.age)
+my_list1 = [1,1,2,2,3,4,5]
+unique_number = list(set(my_list1))
+print(unique_number)
