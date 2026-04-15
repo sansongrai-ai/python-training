@@ -52,4 +52,30 @@ numbers = [1,2,3]
 result = map(lambda x: x+10,numbers)
 print(list(result))
 
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
 
+emp = Employee("keshab", 10000)
+
+print(emp.name)
+print(emp.salary)
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def show_name(self):
+        print("Name:", self.name)
+
+
+class Employee(Person):
+    def __init__(self, name, salary):
+        super().__init__(name)   # call parent constructor
+        self.salary = salary
+
+
+emp = Employee("arbin", 2000)
+emp.show_name()
+        
